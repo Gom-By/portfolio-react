@@ -1,0 +1,14 @@
+.linkNavBar {
+    color: red;
+}
+@media screen and (max-width: 620px) {
+    .linkContainer {
+        flex-direction: column;
+        height: 100px;
+    }
+}
+
+.containerComponent {
+    min-height: 100vh;
+    overflow: hidden;
+}

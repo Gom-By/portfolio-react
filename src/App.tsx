@@ -1,20 +1,26 @@
 import './assets/main.css';
+import './App.css'
 import Header from './components/Header';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Footer from './components/Footer';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
     <Router>
       <Header />
       <Route path="/" exact>
-        <p>Hello in home page</p>
+        <Home />
       </Route>
       <Route path="/about">
-        <p>Hello in about page</p>
+        <About />
       </Route>
-      <Route path="/contact" exact>
-        <p>Hello in contact page</p>
+      <Route path="/contact">
+        <Contact />
       </Route>
+      <Footer />
     </Router>
   );
 }
