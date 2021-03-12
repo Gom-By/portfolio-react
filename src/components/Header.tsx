@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 const Header = () => {
     return (
         <div>
-            <div className="bg-gray-400 text-center overflow-hidden p-9 space-y-3">
+            <div className="bg-gray-500 text-center overflow-hidden p-9 space-y-3">
                 <b><h1 className="font-serif text-5xl">Guerby Naharro</h1></b>
                 <h2 className="font-mono text-xl text-blue-700">This is my portfolio</h2>
                 <br />

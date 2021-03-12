@@ -1,10 +1,32 @@
 .linkNavBar {
     color: red;
 }
+
 @media screen and (max-width: 620px) {
     .linkContainer {
         flex-direction: column;
         height: 100px;
+    }
+    .projectComponent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 5rem auto;
+        width: 400px;
+        height: 450px;
+    }
+    .projectComponent h1 {
+        height: 95px;
+        padding: 20px;
+    }
+    .projectComponent a {
+        padding: 15px auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projectComponent {
+        margin: 3rem auto;
+        width: 260px;
     }
 }
 
@@ -12,3 +34,4 @@
     min-height: 100vh;
     overflow: hidden;
 }
+
