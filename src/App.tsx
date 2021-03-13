@@ -12,7 +12,7 @@ function App() {
     <div className="App select-none">
       <Router>
         <Header />
-        <Route path="/home" exact>
+        <Route path="/" exact>
           <Home />
         </Route>
         <Route path="/about">
