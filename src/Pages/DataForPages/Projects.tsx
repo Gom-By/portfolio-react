@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 0,
         title: "Basic todolist",
-        description: "this project is a basci todolist in vanilla javascript who set all todos in  the local storage. It's notfinish....",
+        description: "this project is a basci todolist in vanilla javascript who set all todos in  the local storage. It's not finish....",
         imgUrl: "https://th.bing.com/th/id/Rb2baae741f0c69720c1dfd8d91952741?rik=wqzf15uoHfpAGw&riu=http%3a%2f%2firepo.primecp.com%2f2015%2f03%2f210883%2fFree-Printable-To-Do-List_ExtraLarge700_ID-901482.jpg%3fv%3d901482&ehk=F%2fPIpx%2fP9jaENj3cDrGR6JBVDqiFu060%2bd9%2fcYMeEEs%3d&risl=&pid=ImgRaw",
         link: "https://gom-by.github.io/todo"
     },
