@@ -22,7 +22,6 @@ function App() {
           <Contact />
         </Route>
         <Footer />
-
       </Router>
     </div>
   );
