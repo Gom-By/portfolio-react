@@ -1,3 +1,5 @@
+import React from 'react'
+
 const projects = [
     {
         id: 0,
@@ -30,17 +32,27 @@ const projectTailwindcss = {
     a: "underline text-center text-red-500 font-bold text-2xl m-10"
 }
 
-export const projectsComponent = projects.map((project) => {
+const Projects = () => {
     return (
-        <div className={projectTailwindcss.container} key={project.id}>
-            <div>
-                <h1 className={projectTailwindcss.h1}>{project.title}</h1>
-                <p className={projectTailwindcss.p}>{project.description}</p>
-            </div>
-            <div>
-                <a className={projectTailwindcss.a} href={project.link}>Try the code</a>
-                <img className={projectTailwindcss.img} src={project.imgUrl} alt="reload" ></img>
-            </div>
+        <div>
+            {
+                projects.map((project) => {
+                    return (
+                        <div className={projectTailwindcss.container} key={project.id}>
+                            <div>
+                                <h1 className={projectTailwindcss.h1}>{project.title}</h1>
+                                <p className={projectTailwindcss.p}>{project.description}</p>
+                            </div>
+                            <div>
+                                <a className={projectTailwindcss.a} href={project.link}>Try the code</a>
+                                <img className={projectTailwindcss.img} src={project.imgUrl} alt="reload"></img>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
-})
+}
+
+export default Projects
