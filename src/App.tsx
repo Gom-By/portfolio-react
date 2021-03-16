@@ -12,13 +12,13 @@ function App() {
     <div className="App select-none">
       <Router>
         <Header />
-        <Route path="/" exact>
+        <Route path="/portfolio-react/" exact>
           <Home />
         </Route>
-        <Route path="/about">
+        <Route path="/portfolio-react/about">
           <About />
         </Route>
-        <Route path="/contact">
+        <Route path="/portfolio-react/contact">
           <Contact />
         </Route>
         <Footer />
