@@ -49,7 +49,7 @@ function Projects() {
                     )
                 })
             }
-        </div>
+        </div >
     )
 }
 

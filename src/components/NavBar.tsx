@@ -7,7 +7,7 @@ const NavBar = () => {
             <Link className={linkStyleTailwind} to="/portfolio-react">Home</Link>
             <Link className={linkStyleTailwind} to="/portfolio-react/about">About</Link>
             <Link className={linkStyleTailwind} to="/portfolio-react/contact">Contact</Link>
-        </div>
+        </div >
     )
 }
 
