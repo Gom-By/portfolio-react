@@ -23,7 +23,7 @@ const projects = [
 ]
 
 const projectTailwindcss = {
-    container: "projectComponent grid grid-cols-2 h-80 w-4/5 m-20 border-2 border-red-800 overflow-hidden rounded-xl",
+    container: "projectComponent grid grid-cols-2 h-80 border-2 border-red-800 mx-36 my-20 overflow-hidden rounded-xl",
     h1: "bg-red-900 text-white text-3xl font-serif p-5 h-20",
     p: "text-xl text-center p-5",
     img: "h-auto w-auto",

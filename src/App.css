@@ -2,10 +2,16 @@
     color: red;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 620px) { /* smartphone */
+    * {
+        font-size: 15px;
+    }
     .linkContainer {
         flex-direction: column;
         height: 100px;
+    }
+    .headerSuubtitle {
+        visibility: hidden;
     }
     .projectComponent {
         grid-template-columns: 1fr;
