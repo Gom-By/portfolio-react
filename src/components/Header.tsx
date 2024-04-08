@@ -4,13 +4,13 @@ import NavBar from './NavBar'
 const Header = () => {
     return (
         <div>
-            <div className="bg-gray-500 text-center overflow-hidden p-9 space-y-3">
-                <b><h1 className="font-serif text-5xl">Gom-By Portfolio</h1></b>
-                <h2 className="headerSuubtitle font-mono text-xl text-white md:none">This is my portfolio</h2>
-                <br />
-                <a href="" className="text-2xl underline hover:text-red-500">Here is my CV</a>
-            </div>
             <NavBar />
+            {/* hero section #hero-body */}
+            <header id="hero-body" className="bg-cover bg-center border-b text-center py-18vh md:pt-18vh md:h-450px">
+                    <h1 id="title" className="text-6xl text-red-500 font-pacifico">Gom-By Portfolio</h1>
+                    <p id="p-hero" className="text-3xl font-caveat">This is my portfolio</p>
+                    <a href="http://gby-first-page.byethost9.com" className="text-3xl">Here is my cv</a>
+            </header>
         </div>
     )
 }
