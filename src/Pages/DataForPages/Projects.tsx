@@ -32,23 +32,24 @@ const projectTailwindcss = {
 
 function Projects() {
     return (
-        <div>
-            {
-                projects.map((project) => {
-                    return (
-                        <div className={projectTailwindcss.container} key={project.id}>
-                            <div>
-                                <h1 className={projectTailwindcss.h1}>{project.title}</h1>
-                                <p className={projectTailwindcss.p}>{project.description}</p>
+        <div className="container" id="project">
+            <h2 className="h1-container text-4xl font-pacifico">All of my projects</h2>
+            <p className="p-short text-2xl font-bold">there are more project on github</p>
+        
+            <div className="grid-project grid grid-cols-1 md:grid-cols-3 gap-4">
+                {
+                    projects.map((project) => {
+                        return (
+                            <div className="item-project bg-gradient-to-b from-black to-opacity-25 border border-cyan-500 rounded-lg text-white min-h-300px md:h-300px max-h-300px" key={project.id}>
+                                <p className="p-item-project text-xl">{project.title}</p>
+                                <img src={project.imgUrl} alt="nothing for now" className="img-project" />
+                                <p className="p-describe-project text-xl">{project.description}</p>
+                                <a href={project.link} className="link-project">link to my project</a>
                             </div>
-                            <div>
-                                <a className={projectTailwindcss.a} href={project.link}>Try the code</a>
-                                <img className={projectTailwindcss.img} src={project.imgUrl} alt="reload" ></img>
-                            </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
         </div >
     )
 }
